@@ -7,6 +7,9 @@ import './App.css';
 
 //Personal components 
 import Footer from "./components/Footer/Footer";
+import About from "./pages/about";
+import Contact from './pages/contact';
+import Portfolio from './pages/portfolio';
 
 class App extends React.Component {
 
@@ -15,7 +18,7 @@ class App extends React.Component {
     this.state = {
       title: 'Callum White',
       headerLinks: [
-        {title: 'Home', path: '/'},
+        {title: 'About', path: '/'},
         {title: 'Portfolio', path: '/portfolio'},
         {title: 'Contact', path: '/contact'}
       ],
@@ -44,7 +47,12 @@ class App extends React.Component {
                 <Link className="nav-link text-light" to="/contact">Contact</Link>
               </Nav>
             </Navbar.Collapse>
-          </Navbar>       
+          </Navbar>   
+
+          <Route path="/" exact render={() => <About title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text} />} />
+          <Route path="/portfolio" exact render={() => <Portfolio title={this.state.portfolio.title}/>} />  
+          <Route path="/contact" exact render={() => <Contact title={this.state.contact.title}/>} /> 
+
           <Footer />
         </Container>
       </Router>

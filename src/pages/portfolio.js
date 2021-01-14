@@ -1,10 +1,10 @@
 import React from "react";
 
-function About(props) {
+function Portfolio(props) {
 
     return(
         <p> Working </p>
     )
 }
 
-export default About;
+export default Portfolio;
