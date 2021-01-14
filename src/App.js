@@ -5,7 +5,8 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import './App.css';
 
-
+//Personal components 
+import Footer from "./components/Footer/Footer";
 
 class App extends React.Component {
 
@@ -43,7 +44,8 @@ class App extends React.Component {
                 <Link className="nav-link text-light" to="/contact">Contact</Link>
               </Nav>
             </Navbar.Collapse>
-          </Navbar>
+          </Navbar>       
+          <Footer />
         </Container>
       </Router>
     );
