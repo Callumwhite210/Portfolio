@@ -4,13 +4,11 @@ html {
 }
 body {
   margin-bottom: 60px;
- /* background-image: url("./images/636909.jpg"); */
   background-position: center center; 
   background-size: 100% 100%; 
   font-family: Arial, Helvetica, sans-serif;
 }
 .App {
-  background-image: url("./images/636909.jpg");
   position: fixed;
   min-width: 100%;
   min-height: 100%;

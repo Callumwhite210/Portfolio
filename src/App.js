@@ -39,9 +39,9 @@ class App extends React.Component {
     return (
       <Router>
         <Container className="p-0" fluid={true}>
-          <Navbar bg="transparant" expand="lg"> 
+          <Navbar bg="transparant" expand="lg" > 
             <Navbar.Brand className="text-light"> Callum White </Navbar.Brand>
-            <Navbar.Toggle className="border-0 dropdown" aria-controls="navbar-toggle"/>
+            <Navbar.Toggle className="border-0 dropdown navbar-dark" aria-controls="navbar-toggle"/>
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
                 <Link className="nav-link text-light" to="/">About</Link>
@@ -50,11 +50,9 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>   
-
           <Route path="/" exact render={() => <About title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
-          <Route path="/portfolio" exact render={() => <Portfolio title={this.state.portfolio.title}/>} />  
-          <Route path="/contact" exact render={() => <Contact title={this.state.contact.title}/>} /> 
-
+          <Route path="/portfolio" render={() => <Portfolio title={this.state.portfolio.title}/>} />  
+          <Route path="/contact" render={() => <Contact title={this.state.contact.title}/>} /> 
           <Footer />
         </Container>
       </Router>
