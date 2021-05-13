@@ -2,7 +2,7 @@
   "name": "y",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://callumwhite210.github.io/Portfolio",
+  "homepage": "https://callumwhite210.github.io/",
   "proxy": "http://localhost:3000/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -52,11 +52,11 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Callumwhite210/Portfolio.git"
+    "url": "git+https://github.com/Callumwhite210/.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Callumwhite210/Portfolio/issues"
+    "url": "https://github.com/Callumwhite210/issues"
   }
 }
