@@ -15,45 +15,6 @@ class Contact extends React.Component {
             emailsent: null
         }
     }
-
-    handleChange = (event) => {
-        const target = event.target;
-        const value = target.type === 'checkbox' ? target.checked : target.value;
-        const name = target.name;
-
-        this.setState({
-            [name]: value
-        })
-    }
-
-    handleSubmit = (event)=> {
-        event.preventDefault();
-
-        this.setState({
-            disabled: true
-        });
-
-        Axios.post('http://localhost:3000/api/email',this.state)
-        .then (res => {
-            if(res.data.success){
-                this.setState({
-                    disabled: false,
-                    emailsent: true
-                });
-            } else {
-                    this.setState({
-                        disabled: false,
-                        emailsent: false
-                    });
-            }
-        })
-        .catch(err => {
-            this.setState({
-                disabled: false,
-                emailsent: false
-            })
-        })
-    }
     render(){
         return(
             <div>

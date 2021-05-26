@@ -2,7 +2,7 @@
   "name": "y",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://callumwhite210.github.io/",
+  "homepage": "https://callumwhite210.github.io",
   "proxy": "http://localhost:3000/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
